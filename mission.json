@@ -1,0 +1,19 @@
+{
+  "project": "SkyBorn-Dream-or-Reality-",
+  "codename": "SkyBorn",
+  "version": "1.0.0",
+  "status": "active",
+  "mission": "Explore and document the boundary between dream and reality through data-driven atmospheric research.",
+  "objectives": [
+    "Collect and analyze atmospheric sensor data from desert environments",
+    "Build predictive models for smog behavior and air quality trends",
+    "Publish open-source tools for environmental monitoring",
+    "Bridge creative vision with scientific observation"
+  ],
+  "team": {
+    "lead": "desertsmogtech",
+    "division": "Environmental Research & Creative Systems"
+  },
+  "created": "2026-05-08",
+  "license": "MIT"
+}
