@@ -1,0 +1,42 @@
+============================================
+  SKYBORN — OPERATOR SCRIPT
+  Dream or Reality?
+============================================
+
+INITIALIZATION
+--------------
+1. Clone this repository to your local environment.
+2. Review mission.json for current project objectives.
+3. Verify system_config.json settings match your deployment target.
+
+STANDARD OPERATING PROCEDURE
+-----------------------------
+- All sensor data logs go in the /assets directory.
+- Documentation updates belong in /docs.
+- Commit messages must follow the format:
+    [MODULE] Brief description of change
+  Example: [ASSETS] Added Q2 2026 atmospheric readings
+
+DEPLOYMENT CHECKLIST
+---------------------
+[ ] Confirm mission.json version matches release tag
+[ ] Validate system_config.json parameters
+[ ] Run data integrity checks on /assets
+[ ] Update /docs/CHANGELOG.md with release notes
+[ ] Tag the release and push to main
+
+EMERGENCY PROTOCOL
+-------------------
+If sensor feeds go offline:
+  1. Check system_config.json for endpoint status.
+  2. Restart the data pipeline.
+  3. Log the incident in /docs with a timestamp.
+
+CONTACT
+--------
+Operator: desertsmogtech
+Repository: https://github.com/desertsmogtech/SkyBorn-Dream-or-Reality-.git
+
+============================================
+  "The sky remembers what the ground forgets."
+============================================
