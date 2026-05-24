@@ -1,15 +1,66 @@
-# Security Policy
+# Security & Separation Rules
 
-## Reporting Issues
+## SkyBorn-Dream-or-Reality
 
-This repository is not a deployed system and contains no active runtime components.
+This repository uses a strict three-tier separation model.
 
-If you identify a security concern in the documentation or structure:
-- Open a private issue
-- Or contact the repository owner directly
+---
 
-## Scope
+## 1. Public-Safe Layer
 
-- Public docs: safe for general access
-- Internal docs: NDA required
-- internal/ directory: never disclosed
+**Location:**
+- `/docs/public/*`
+- `/README.md`
+- Non-sensitive examples
+
+**Allowed:**
+- High-level descriptions
+- Conceptual overviews
+- Public-facing documentation
+
+**Restricted:**
+- No internal logic
+- No timing models
+- No arbitration rules
+- No operator-only content
+
+---
+
+## 2. NDA-Only Layer
+
+**Location:**
+- `/docs/internal/*`
+- `/CINS/modules/*`
+- Architecture specifications
+- Timing & latency models
+- Safety envelope definitions
+
+**Access:**
+- Requires explicit permission
+- Must not be shared publicly
+- Must not be referenced in public issues or PRs
+
+---
+
+## 3. Never-Disclosed Layer
+
+**Location:**
+- `/internal/*`
+- `/operator-notes/*`
+- Any file tagged operator-only
+
+**Rules:**
+- Never committed
+- Never uploaded
+- Never shared
+- Never passed to AI systems
+
+This layer contains operator identity, lineage, rituals, glyphs, and personal annotations.
+
+---
+
+## Enforcement
+
+- CODEOWNERS restricts access
+- .gitignore blocks never-disclosed content
+- Branch protection required for internal paths
