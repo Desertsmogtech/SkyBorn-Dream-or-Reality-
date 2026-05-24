@@ -1,6 +1,16 @@
-# SkyBorn — Dream or Reality?
+# SkyBorn — Dream or Reality
+### Operator Environment Initialization Layer
 
-An open-source environmental monitoring and atmospheric research project.
+SkyBorn‑Dream‑or‑Reality is the operator‑facing environment where conceptual architecture becomes executable structure.
+
+This environment contains:
+- The C.I.N.S. navigation layer
+- Public‑safe documentation
+- NDA‑restricted internal specifications
+- Module scaffolding for orchestration, safety, timing, and arbitration
+- Operator‑only notes and environment directives
+
+This is the staging ground where ideas become systems.
 
 ## Project Structure
 
