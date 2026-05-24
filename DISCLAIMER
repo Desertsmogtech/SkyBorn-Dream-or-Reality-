@@ -1,0 +1,8 @@
+DISCLAIMER
+
+This repository contains conceptual and technical materials for the SkyBorn and C.I.N.S. architectures.
+
+Nothing in this repository constitutes a safety guarantee, performance guarantee, or certification for deployment in safety-critical environments (including but not limited to robotics, automotive, avionics, medical, or industrial control systems).
+
+Use of any code or design described here is at your own risk.
+No warranty is expressed or implied.

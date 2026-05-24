@@ -1,0 +1,11 @@
+# Public docs
+/docs/public/*      @Desertsmogtech
+
+# Internal technical docs (NDA)
+/docs/internal/*    @Desertsmogtech
+
+# C.I.N.S. modules
+/CINS/modules/*     @Desertsmogtech
+
+# Never-disclosed area (if ever tracked)
+/internal/*         @Desertsmogtech

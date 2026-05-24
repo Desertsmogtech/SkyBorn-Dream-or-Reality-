@@ -1,0 +1,16 @@
+# Python / Node / general
+pycache/
+*.pyc
+node_modules/
+dist/
+build/
+
+# Local tooling
+.env
+*.log
+
+# Operator-only / never disclosed
+internal/
+*.secret
+*.key
+*.pem
