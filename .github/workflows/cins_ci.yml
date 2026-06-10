@@ -1,0 +1,46 @@
+name: CINS CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest pytest-cov
+
+      - name: Run unit tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          pytest CINS/tests/ -v --ignore=CINS/tests/stress
+
+      - name: Run stress tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          pytest CINS/tests/stress/ -v
+
+      - name: Run full suite with coverage
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          pytest CINS/tests/ -v --cov=CINS --cov-report=term-missing
